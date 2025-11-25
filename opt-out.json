@@ -1,0 +1,5 @@
+{
+  "opt_out_repositories": [],
+  "last_updated": null,
+  "notes": "Repositories in this list have requested exclusion from the discovery registry. This list is automatically respected by all search and generation scripts."
+}

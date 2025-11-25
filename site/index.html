@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Discovery - AI-Native Architecture Registry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Claude Discovery</h1>
+            <p class="tagline">Finding peers in AI-native architecture</p>
+            <nav>
+                <a href="index.html">Registry</a>
+                <a href="patterns.html">Pattern Library</a>
+                <a href="about.html">About</a>
+                <a href="https://github.com/budgetanalyzer/claude-discovery">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <h2>Discovery Registry</h2>
+            <p>Repositories using discovery patterns for AI-native development</p>
+
+            <div class="search-controls">
+                <input type="text" id="searchInput" placeholder="Search by name, language, pattern..." />
+
+                <div class="filters">
+                    <label>
+                        <input type="checkbox" id="filterHighQuality" checked />
+                        High Quality (7+)
+                    </label>
+                    <label>
+                        <input type="checkbox" id="filterMediumQuality" checked />
+                        Medium Quality (5-6)
+                    </label>
+                    <label>
+                        <input type="checkbox" id="filterLowQuality" />
+                        Lower Quality (&lt;5)
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <span class="stat-number" id="totalCount">24</span>
+                <span class="stat-label">Total Discoveries</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="highQualityCount">3</span>
+                <span class="stat-label">High Quality Peers</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="languageCount">9</span>
+                <span class="stat-label">Languages</span>
+            </div>
+        </section>
+
+        <section id="discoveries" class="discoveries-grid">
+            <!-- Generated discovery cards will be inserted here -->
+        </section>
+
+        <section class="opt-in-notice">
+            <h3>Opt-In/Opt-Out</h3>
+            <p>
+                All listed repositories contain publicly available information. If you'd like your repository
+                included or excluded from this registry, please
+                <a href="https://github.com/budgetanalyzer/claude-discovery/issues/new?template=opt-in-out.md">submit an issue</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Last updated: 2025-11-25 02:57 UTC</p>
+            <p>Discovery, not evangelism. Quality over quantity. Privacy-respecting.</p>
+        </div>
+    </footer>
+
+    <script src="discoveries-data.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

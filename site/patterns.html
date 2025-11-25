@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Library - Claude Discovery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .pattern-section {
+            margin-bottom: 3rem;
+        }
+
+        .pattern-section h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .pattern-examples {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .pattern-code {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 1rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.875rem;
+            margin: 0.5rem 0;
+            overflow-x: auto;
+        }
+
+        .repos-using {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .repo-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .repo-badge {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            text-decoration: none;
+        }
+
+        .repo-badge:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Claude Discovery</h1>
+            <p class="tagline">Finding peers in AI-native architecture</p>
+            <nav>
+                <a href="index.html">Registry</a>
+                <a href="patterns.html">Pattern Library</a>
+                <a href="about.html">About</a>
+                <a href="https://github.com/budgetanalyzer/claude-discovery">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Discovery Pattern Library</h2>
+            <p>
+                Common patterns found in AI-native documentation across discovered repositories.
+                These patterns enable AI agents to explore and understand codebases through
+                executable discovery commands rather than static documentation.
+            </p>
+        </section>
+
+        
+        <section class="pattern-section">
+            <h3>🐳 Docker Discovery Patterns</h3>
+            <p>Commands for exploring Docker containers, images, and logs</p>
+            <div class="pattern-examples">
+        
+                <div>
+                    <code class="pattern-code">docker (ps|images|logs)</code>
+                    <div class="repos-using">
+                        <strong>Used in 13 repositories</strong>
+                        <div class="repo-list">
+            <a href="https://github.com/ContainerCraft/devcontainer" class="repo-badge">ContainerCraft/devcontainer</a><a href="https://github.com/Kong/kong" class="repo-badge">Kong/kong</a><a href="https://github.com/containers/podman" class="repo-badge">containers/podman</a><a href="https://github.com/devrt/ros-devcontainer-vscode" class="repo-badge">devrt/ros-devcontainer-vscode</a><a href="https://github.com/felipecrs/docker-images" class="repo-badge">felipecrs/docker-images</a><span class="repo-badge" style="background: var(--secondary-color)">+8 more</span>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        
+
+        <section class="pattern-section">
+            <h3>☸️ Kubernetes Discovery Patterns</h3>
+            <p>Commands for exploring Kubernetes clusters, pods, and services</p>
+            <div class="pattern-examples">
+        
+                <div>
+                    <code class="pattern-code">kubectl</code>
+                    <div class="repos-using">
+                        <strong>Used in 11 repositories</strong>
+                        <div class="repo-list">
+            <a href="https://github.com/ContainerCraft/devcontainer" class="repo-badge">ContainerCraft/devcontainer</a><a href="https://github.com/GoogleCloudPlatform/microservices-demo" class="repo-badge">GoogleCloudPlatform/microservices-demo</a><a href="https://github.com/abiosoft/colima" class="repo-badge">abiosoft/colima</a><a href="https://github.com/ahmetb/kubectx" class="repo-badge">ahmetb/kubectx</a><a href="https://github.com/derailed/k9s" class="repo-badge">derailed/k9s</a><span class="repo-badge" style="background: var(--secondary-color)">+6 more</span>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        
+
+        <section class="pattern-section">
+            <h3>📚 Git Discovery Patterns</h3>
+            <p>Commands for exploring repository history and structure</p>
+            <div class="pattern-examples">
+        
+                <div>
+                    <code class="pattern-code">git log</code>
+                    <div class="repos-using">
+                        <strong>Used in 3 repositories</strong>
+                        <div class="repo-list">
+            <a href="https://github.com/helm/helm" class="repo-badge">helm/helm</a><a href="https://github.com/openfaas/faas" class="repo-badge">openfaas/faas</a><a href="https://github.com/vitessio/vitess" class="repo-badge">vitessio/vitess</a>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        
+
+
+        <section class="pattern-section">
+            <h2>Why Discovery Patterns Matter</h2>
+            <p>
+                Discovery patterns in documentation signal a shift from exhaustive static documentation
+                to dynamic, explorable codebases. They demonstrate:
+            </p>
+            <ul style="margin-left: 2rem; margin-top: 1rem;">
+                <li>Production thinking: Real codebases that can be explored</li>
+                <li>AI-native design: Documentation optimized for AI understanding</li>
+                <li>Pattern recognition: If someone independently adopted discovery commands, they "get it"</li>
+                <li>Maintainability: Commands stay accurate as code changes</li>
+            </ul>
+        </section>
+
+        <section class="pattern-section">
+            <h2>Contributing Patterns</h2>
+            <p>
+                Found a new discovery pattern not listed here?
+                <a href="https://github.com/budgetanalyzer/claude-discovery/issues/new">Submit an issue</a>
+                with examples and we'll add it to the library.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Last updated: 2025-11-25 02:57 UTC</p>
+            <p>Pattern library curated from discovered repositories</p>
+        </div>
+    </footer>
+</body>
+</html>

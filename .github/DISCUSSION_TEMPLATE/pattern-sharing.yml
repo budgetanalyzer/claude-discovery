@@ -1,0 +1,69 @@
+labels: [pattern-sharing]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Share a Discovery Pattern
+
+        Found a useful discovery pattern for AI-native documentation? Share it with the community!
+
+  - type: input
+    id: pattern-name
+    attributes:
+      label: Pattern Name
+      description: A short name for this pattern
+      placeholder: e.g., "kubectl namespace exploration"
+    validations:
+      required: true
+
+  - type: textarea
+    id: pattern-description
+    attributes:
+      label: Pattern Description
+      description: Describe what this pattern does and why it's useful
+      placeholder: |
+        This pattern helps AI agents discover all resources in a Kubernetes namespace...
+    validations:
+      required: true
+
+  - type: textarea
+    id: example-commands
+    attributes:
+      label: Example Commands
+      description: Provide example commands that demonstrate this pattern
+      placeholder: |
+        ```bash
+        kubectl get all -n namespace
+        kubectl describe pod pod-name
+        ```
+      render: markdown
+    validations:
+      required: true
+
+  - type: input
+    id: repositories
+    attributes:
+      label: Repositories Using This Pattern
+      description: Link to repositories where you've seen this pattern
+      placeholder: https://github.com/owner/repo1, https://github.com/owner/repo2
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Pattern Category
+      options:
+        - Docker/Container
+        - Kubernetes
+        - Git/Repository
+        - Build/CI
+        - Testing
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other context or observations about this pattern

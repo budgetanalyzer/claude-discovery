@@ -1,0 +1,44 @@
+labels: [architecture]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## AI-Native Architecture Discussion
+
+        Discuss architectural patterns, design decisions, and best practices for building software with AI as a collaborative partner.
+
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      description: What aspect of AI-native architecture do you want to discuss?
+      placeholder: e.g., "Microservices and AI context windows"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context & Background
+      description: Provide context about your experience or the problem you're exploring
+      placeholder: |
+        I've been working with AI agents on a microservices project and noticed that...
+    validations:
+      required: true
+
+  - type: textarea
+    id: questions
+    attributes:
+      label: Questions or Discussion Points
+      description: What would you like to discuss or learn from others?
+      placeholder: |
+        1. How do you structure documentation for AI agents?
+        2. What patterns have you found most effective?
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples (Optional)
+      description: Share code examples, repositories, or documentation that illustrate your point
+      render: markdown

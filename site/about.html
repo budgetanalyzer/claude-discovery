@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Claude Discovery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .content-section h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .content-section p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .content-section ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        blockquote {
+            border-left: 4px solid var(--primary-color);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        .principles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .principle-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .principle-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Claude Discovery</h1>
+            <p class="tagline">Finding peers in AI-native architecture</p>
+            <nav>
+                <a href="index.html">Registry</a>
+                <a href="patterns.html">Pattern Library</a>
+                <a href="about.html">About</a>
+                <a href="https://github.com/budgetanalyzer/claude-discovery">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="content-section">
+            <h2>Vision</h2>
+            <blockquote>
+                "I want to meet someone who is good enough to understand what I built.
+                'For architects by architects' isn't meant to spread adoption."
+            </blockquote>
+            <p>
+                Discover architects who've independently adopted discovery patterns for AI-native development.
+                This isn't about evangelism or user acquisition - it's about finding peers who independently
+                arrived at similar insights about building software with AI as a collaborative partner.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h3>The Problem We're Solving</h3>
+            <p>
+                You can't get people to run setup scripts. You can't evangelize architectural patterns.
+                But you <strong>can</strong> find people who've already figured it out independently.
+                Discovery patterns in documentation are the beacon - a signal that someone is thinking
+                about AI-native architecture at a similar level.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h3>What Is claude-discovery?</h3>
+            <p>A tool to:</p>
+            <ul>
+                <li><strong>Search GitHub</strong> for repositories using discovery patterns in documentation</li>
+                <li><strong>Extract contact information</strong> from those repos</li>
+                <li><strong>Analyze quality signals</strong> to distinguish production implementations from tutorials</li>
+                <li><strong>Generate a registry</strong> of potential peers for conversation</li>
+                <li><strong>Identify emergent patterns</strong> across different implementations</li>
+            </ul>
+            <p>
+                This is <strong>discovery</strong>, not indexing. We're looking for the
+                "five people on the planet" working on this, not building a comprehensive catalog.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h3>Why Discovery Patterns Matter</h3>
+            <p>
+                We're looking for a specific architectural approach, not a filename convention:
+            </p>
+            <ul>
+                <li><strong>Discovery commands over static lists</strong> - repos that teach through exploration</li>
+                <li><strong>Pattern recognition</strong> - if someone independently adopted discovery-based docs, they "get it"</li>
+                <li><strong>Filename agnostic</strong> - whether it's README.md, CONTRIBUTING.md, or CLAUDE.md doesn't matter</li>
+                <li><strong>Signal of sophistication</strong> - using grep/kubectl/docker commands in docs shows production thinking</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h3>Philosophical Principles</h3>
+            <div class="principles">
+                <div class="principle-card">
+                    <h4>1. Discovery, Not Evangelism</h4>
+                    <p>
+                        We're not trying to convince people to adopt a convention. We're finding people
+                        who already figured out the pattern independently.
+                    </p>
+                </div>
+
+                <div class="principle-card">
+                    <h4>2. Quality Over Quantity</h4>
+                    <p>
+                        Finding 5 peer architects is more valuable than cataloging 500 repos with
+                        renamed READMEs. We're looking for production experience and independent insight.
+                    </p>
+                </div>
+
+                <div class="principle-card">
+                    <h4>3. Privacy-Respecting</h4>
+                    <p>
+                        Only index public information. Respect robots.txt. Provide opt-out mechanisms.
+                        Don't scrape aggressively. Be a good citizen.
+                    </p>
+                </div>
+
+                <div class="principle-card">
+                    <h4>4. Open Source as Substrate</h4>
+                    <p>
+                        The code is public not for user acquisition but for discoverability.
+                        Someone pointing their AI at this project should understand the pattern immediately.
+                    </p>
+                </div>
+
+                <div class="principle-card">
+                    <h4>5. AI-Native Architecture</h4>
+                    <p>
+                        This tool itself exemplifies the patterns we're looking for: discoverable,
+                        pattern-based documentation, simple bounded context, runnable without complex setup.
+                    </p>
+                </div>
+
+                <div class="principle-card">
+                    <h4>6. Opt-In Registry</h4>
+                    <p>
+                        This registry is public but respectful. Repositories can request inclusion or
+                        exclusion at any time. Privacy and consent are paramount.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h3>The Hypothesis</h3>
+            <blockquote>
+                There are architects independently discovering that microservices align perfectly with AI context windows,
+                pattern-based documentation beats static lists, and discovery commands in documentation enable AI-native development.
+            </blockquote>
+            <p>
+                If you found it, others will too. Discovery patterns in documentation are the beacon
+                that makes them discoverable.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h3>Get Involved</h3>
+            <p>
+                Found this interesting? Have feedback? Want to opt-in or opt-out?
+            </p>
+            <ul>
+                <li><a href="https://github.com/budgetanalyzer/claude-discovery">Explore the code on GitHub</a></li>
+                <li><a href="https://github.com/budgetanalyzer/claude-discovery/discussions">Join discussions about AI-native architecture</a></li>
+                <li><a href="https://github.com/budgetanalyzer/claude-discovery/issues/new">Request opt-in or opt-out</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Created by architects, for architects</p>
+            <p>Discovery, not evangelism. Quality over quantity. Privacy-respecting.</p>
+        </div>
+    </footer>
+</body>
+</html>

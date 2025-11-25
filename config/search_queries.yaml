@@ -1,0 +1,91 @@
+# GitHub topic-based search queries
+# Tiered approach: Start with most specific, expand if needed
+
+tiers:
+  # Tier 1: Primary topic (most specific)
+  - name: "ai-assisted-development"
+    topics:
+      - "ai-assisted-development"
+    description: "Repositories built FOR and WITH AI as collaborative partner"
+    expected_results: 10-50
+    
+  # Tier 2: Development environment topics (fallback)
+  - name: "ai-development-environment"
+    topics:
+      - "devcontainer"
+      - "kubernetes"
+    description: "Containerized development with orchestration"
+    expected_results: 50-200
+    
+  # Tier 3: Architecture patterns (expansion)
+  - name: "microservices-architecture"
+    topics:
+      - "spring-boot-microservices"
+      - "microservices"
+      - "kubernetes"
+    description: "Production microservices implementations"
+    expected_results: 200-1000
+
+# Common filters applied to all tiers
+filters:
+  archived: false           # No abandoned projects
+  fork: false              # Original work only
+  min_stars: 5             # Quality signal (further relaxed)
+  # pushed_after: "2024-01-01"  # Temporarily disabled to get more results
+  # min_size_kb: 1000        # Temporarily disabled
+  # min_topics: 2            # Temporarily disabled
+
+# Discovery patterns to search for in markdown files
+discovery_patterns:
+  # Commands that explore the codebase
+  - pattern: "kubectl"
+    weight: 3
+    description: "Kubernetes exploration"
+    
+  - pattern: "docker (ps|images|logs)"
+    weight: 2
+    description: "Docker runtime inspection"
+    
+  - pattern: "tree -"
+    weight: 2
+    description: "Directory structure exploration"
+    
+  - pattern: "grep -r"
+    weight: 2
+    description: "Code pattern search"
+    
+  - pattern: "find . -"
+    weight: 1
+    description: "File discovery"
+    
+  - pattern: "git log"
+    weight: 1
+    description: "Repository history"
+    
+  - pattern: "tilt (get|describe)"
+    weight: 3
+    description: "Tilt-based Kubernetes development"
+    
+  - pattern: "ls -la"
+    weight: 1
+    description: "Directory listing"
+
+# Markdown files to search (in priority order)
+target_files:
+  - "CLAUDE.md"
+  - "README.md"
+  - "CONTRIBUTING.md"
+  - "DEVELOPMENT.md"
+  - "ARCHITECTURE.md"
+  - "DEVELOPER.md"
+
+# Quality scoring weights
+quality_weights:
+  has_ci_cd: 2
+  has_tests: 2
+  has_docker: 1
+  has_kubernetes: 2
+  multiple_repos: 3
+  recent_commits: 1
+  multiple_contributors: 1
+  discovery_pattern_depth: 3
