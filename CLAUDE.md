@@ -122,7 +122,7 @@ find src -type f -name "*.java" | wc -l
 **Stage 1: Topic Pre-Filtering**
 ```bash
 # Simulated search (what the code does)
-# topic:ai-assisted-development archived:false stars:>=50
+# topic:ai-native archived:false stars:>=50
 # → ~50 candidate repos (99% reduction)
 
 # View topic filter configuration

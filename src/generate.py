@@ -278,7 +278,7 @@ if __name__ == '__main__':
             'url': 'https://github.com/budgetanalyzer/orchestration',
             'stars': 5,
             'language': 'Shell',
-            'topics': ['ai-assisted-development', 'kubernetes'],
+            'topics': ['ai-native', 'kubernetes'],
             'last_push': '2024-11-25T00:00:00Z',
             'markdown_file': 'CLAUDE.md',
             'file_url': 'https://github.com/budgetanalyzer/orchestration/blob/main/CLAUDE.md',

@@ -38,7 +38,7 @@ If a root markdown file contains commands like these, that architect is thinking
 **Two-Stage Discovery:**
 
 1. **Topic Pre-Filtering** - Use GitHub Search API to find candidate repos by topics
-   - Primary: `topic:ai-assisted-development`
+   - Primary: `topic:ai-native`
    - Fallback: `topic:devcontainer topic:kubernetes`
    - Reduces search space from millions to ~50 repos
 
@@ -168,7 +168,7 @@ This tool itself exemplifies the patterns:
 
 ## Topic Standardization
 
-We're establishing `ai-assisted-development` as a GitHub topic:
+We're establishing `ai-native` as a GitHub topic:
 - Repositories built FOR and WITH AI as collaborative partner
 - Discovery patterns in documentation
 - Production-grade implementations
@@ -240,7 +240,7 @@ This is a discovery project, not a community project (yet). If you've independen
 
 For now:
 1. Star the repo if the pattern resonates
-2. Add `ai-assisted-development` topic to your repos if you're doing this
+2. Add `ai-native` topic to your repos if you're doing this
 3. [Share your discoveries](https://github.com/budgetanalyzer/claude-discovery/discussions)
 4. Open an issue for bugs or feature requests
 

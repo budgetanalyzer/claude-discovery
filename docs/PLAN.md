@@ -61,7 +61,7 @@ The pattern is what matters. If a root markdown file contains discovery commands
 
 **Stage 1: Topic-Based Pre-Filtering** (NEW)
 - Use GitHub Search API with topic and metadata filters
-- Primary query: `topic:ai-assisted-development archived:false fork:false stars:>=50 pushed:>2024-01-01`
+- Primary query: `topic:ai-native archived:false fork:false stars:>=50 pushed:>2024-01-01`
 - Expected results: ~50 high-quality candidate repos (99% reduction from millions)
 - Fast: 5-10 API calls, <1 minute
 
@@ -77,7 +77,7 @@ The pattern is what matters. If a root markdown file contains discovery commands
 # Pseudo-code
 prefilter_by_topics()
 - GitHub Search API queries with topic filters:
-  - Tier 1 (Primary): topic:ai-assisted-development
+  - Tier 1 (Primary): topic:ai-native
   - Tier 2 (Fallback): topic:devcontainer topic:kubernetes
   - Tier 3 (Expansion): topic:spring-boot-microservices
 - Metadata filters (all queries):
@@ -352,7 +352,7 @@ We're in phase 1-2. Building this tool accelerates toward phase 3-4.
 2. **False positives**: How to filter renamed READMEs vs real adoption?
 3. **Update cadence**: Daily? Weekly? On-demand?
 4. **Data storage**: Commit JSON to git, or external database?
-5. **Topic tier expansion**: Start with Tier 1 (ai-assisted-development), expand to other tiers if <10 results?
+5. **Topic tier expansion**: Start with Tier 1 (ai-native), expand to other tiers if <10 results?
 
 ### Strategic
 1. **Public vs private**: Should discoveries be public immediately?

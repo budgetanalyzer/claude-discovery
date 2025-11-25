@@ -152,7 +152,7 @@ if __name__ == '__main__':
             'repo': 'orchestration',
             'url': 'https://github.com/budgetanalyzer/orchestration',
             'stars': 0,
-            'topics': ['ai-assisted-development'],
+            'topics': ['ai-native'],
             'last_push': '2024-11-25T00:00:00Z',
             'language': 'Shell',
             'description': 'Orchestration for Budget Analyzer',

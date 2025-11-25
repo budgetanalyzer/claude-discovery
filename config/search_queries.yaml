@@ -3,9 +3,9 @@
 
 tiers:
   # Tier 1: Primary topic (most specific)
-  - name: "ai-assisted-development"
+  - name: "ai-native"
     topics:
-      - "ai-assisted-development"
+      - "ai-native"
     description: "Repositories built FOR and WITH AI as collaborative partner"
     expected_results: 10-50
     
