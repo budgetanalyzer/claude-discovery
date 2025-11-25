@@ -8,8 +8,15 @@ tiers:
       - "ai-native"
     description: "Repositories built FOR and WITH AI as collaborative partner"
     expected_results: 10-50
-    
-  # Tier 2: Development environment topics (fallback)
+
+  # Tier 2: Fallback topic
+  - name: "ai-assisted-development"
+    topics:
+      - "ai-assisted-development"
+    description: "AI-assisted development repositories (legacy term)"
+    expected_results: 10-50
+
+  # Tier 3: Development environment topics (expansion)
   - name: "ai-development-environment"
     topics:
       - "devcontainer"
@@ -17,7 +24,7 @@ tiers:
     description: "Containerized development with orchestration"
     expected_results: 50-200
     
-  # Tier 3: Architecture patterns (expansion)
+  # Tier 4: Architecture patterns (expansion)
   - name: "microservices-architecture"
     topics:
       - "spring-boot-microservices"

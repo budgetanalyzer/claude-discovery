@@ -78,8 +78,9 @@ The pattern is what matters. If a root markdown file contains discovery commands
 prefilter_by_topics()
 - GitHub Search API queries with topic filters:
   - Tier 1 (Primary): topic:ai-native
-  - Tier 2 (Fallback): topic:devcontainer topic:kubernetes
-  - Tier 3 (Expansion): topic:spring-boot-microservices
+  - Tier 2 (Fallback): topic:ai-assisted-development
+  - Tier 3 (Expansion): topic:devcontainer topic:kubernetes
+  - Tier 4 (Expansion): topic:spring-boot-microservices
 - Metadata filters (all queries):
   - archived:false (no abandoned projects)
   - fork:false (original work only)

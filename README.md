@@ -39,7 +39,8 @@ If a root markdown file contains commands like these, that architect is thinking
 
 1. **Topic Pre-Filtering** - Use GitHub Search API to find candidate repos by topics
    - Primary: `topic:ai-native`
-   - Fallback: `topic:devcontainer topic:kubernetes`
+   - Fallback: `topic:ai-assisted-development`
+   - Expansion: `topic:devcontainer topic:kubernetes`
    - Reduces search space from millions to ~50 repos
 
 2. **Content Search** - Scan pre-filtered repos for discovery patterns
