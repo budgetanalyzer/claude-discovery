@@ -1,5 +1,27 @@
 # claude-discovery - AI-Native Discovery Tool
 
+## Tree Position
+
+**Archetype**: experimental
+**Scope**: budgetanalyzer ecosystem
+**Role**: Discovery tool for finding repos with AI-native documentation patterns
+
+### Relationships
+- **Cloned from**: None (standalone experiment)
+- **Peers with**: Other experimental repos (`*-claude`, `claude-*`)
+- **Purpose**: Finding peer architects using discovery-based documentation
+
+### Permissions
+- **Read**: Whatever the experiment requires
+- **Write**: This repository only
+- **Note**: Not production; exploratory project
+
+### Discovery
+```bash
+# My peers
+ls -d /workspace/*-claude /workspace/claude-*
+```
+
 ## Project Overview
 
 A discovery tool for finding GitHub repositories that use discovery patterns in their documentation. This project is itself an example of the pattern it seeks: documentation that helps AI agents understand the codebase through exploration.
@@ -311,6 +333,10 @@ git log --oneline --since="1 week ago"
 
 **This is a living document.** As we implement search and find peers, we'll update based on what we learn.
 
-**Status**: Foundation phase  
-**Author**: Human architect + AI collaborator  
+**Status**: Foundation phase
+**Author**: Human architect + AI collaborator
 **Date**: 2025-01-24
+
+## Conversation Capture
+
+When the user asks to save this conversation, write it to `/workspace/architecture-conversations/conversations/` following the format in INDEX.md.
