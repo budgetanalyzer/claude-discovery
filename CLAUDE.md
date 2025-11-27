@@ -322,6 +322,16 @@ git log --oneline --since="1 week ago"
 
 **Dogfooding**: This repo should be discoverable by its own search tool. After implementing search, run it and verify that `claude-discovery` itself appears in results.
 
+## Web Search Protocol
+
+BEFORE any WebSearch tool call:
+1. Read `Today's date` from `<env>` block
+2. Extract the current year
+3. Use current year in queries about "latest", "best", "current" topics
+4. NEVER use previous years unless explicitly searching historical content
+
+FAILURE MODE: Training data defaults to 2023/2024. Override with `<env>` year.
+
 ## See Also
 
 - [README.md](README.md) - Public-facing vision statement
