@@ -1,6 +1,8 @@
 # claude-discovery: Finding Peers in AI-Native Architecture
 
-> "I want to meet someone who is good enough to understand what I built."
+> "Archetype: experimental. Role: Discovery tool for finding repos with AI-native documentation patterns."
+>
+> — [CLAUDE.md](CLAUDE.md#tree-position)
 
 ## What Is This?
 
